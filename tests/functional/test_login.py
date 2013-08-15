@@ -20,7 +20,7 @@ class TestLogin(SeleniumTestCase):
         with Annotator(driver):
             picker = driver.find_element_by_class_name('user-picker')
             dropdown = picker.find_element_by_class_name('dropdown-toggle')
-            self.assertEqual(dropdown.text, "test")
+            self.assertEqual(dropdown.text, "test/localhost")
 
 if __name__ == "__main__":
     unittest.main()
